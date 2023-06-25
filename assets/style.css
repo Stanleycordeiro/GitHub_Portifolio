@@ -127,6 +127,10 @@ margin-top: 90px;
 color: var(--body-color);
 }
 
+#imgSkills {
+    border-top: 0.2px solid var(--border-card);
+}
+
 #backgroundProfile{
     background-color: var(--body-h1);
     width: 100%;
