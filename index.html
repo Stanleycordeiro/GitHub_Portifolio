@@ -13,36 +13,50 @@
     <title>Portifólio github</title>
   </head>
   <body>
-    <div class="main" id="main">
+    <div class="main d-flex flex-column min-vh-100" id="main">
       <!-- ehader -->
-      <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark" id="collapse">
+      <div
+        class="collapse"
+        id="navbarToggleExternalContent"
+        data-bs-theme="dark"
+        id="collapse"
+      >
         <div class="p-4 pb-0 pt-3 ms-4">
           <h4 class="text-body-emphasis h3 container"><b>MENU</b></h4>
-            <div class="container d-flex justify-content-between align-items-center pt-2" id="btnMenu">
-                <button><p class="mr-5">Perfil</p></button>
-                <button><p class="mr-5">Projetos</p></button>
-                <button><p class="mr-5">Redes sociais</p></button>
-            </div>
+          <div
+            class="container d-flex justify-content-between align-items-center pt-2"
+            id="btnMenu"
+          >
+            <button onclick="winPerfil()"><p class="mr-5">Perfil</p></button>
+            <button onclick="winRepos()"><p class="mr-5">Projetos</p></button>
+            <button onclick="winRedes()"><p class="mr-5">Redes sociais</p></button>
+          </div>
         </div>
       </div>
-      
+
       <nav
         class="p-2 ps-5 pe-5 shadow-sm d-flex justify-content-between navbar"
         id="header"
       >
-      
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" id="navMenu">
-        <span class="navbar-toggler-icon" id="navIcon"></span>
-      </button>
-  
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="navMenu"
+        >
+          <span class="navbar-toggler-icon" id="navIcon"></span>
+        </button>
+
         <label class="switch">
           <input type="checkbox" id="checkBox" onclick="themeToggle()" />
           <span class="slider"></span>
         </label>
         <img src="./assets/images/github.png" id="imgGit" />
-    
-</nav>
+      </nav>
 
       <!-- background header -->
       <div
@@ -50,18 +64,34 @@
         id="headerBg"
       ></div>
 
-      
-      <!-- CARD PROJETOS -->
-    <div id="repos" class="pb-3">
-        <h1 class="text-center mt-3"><b>Projetos GitHub</b></h1>
-        <!-- OS REPOSITORIOS FICAM AQUI -->
-    </div>
-
-      <footer class="footer">
-        <div class="container text-center">
-          <p class="pt-3"><b>"O conhecimento liberta o homem de qualquer limitação"</b></p>
+      <div id="window" class="pb-2">
+        <!-- tela perfil -->
+        <div id="perfil">
+          <div
+            class="container d-flex justify-content-center align-items-center"
+          >
+            <h1 class="text-center mt-3"><b>Perfil</b></h1>
+          </div>
+        </div>
+        <!-- CARD PROJETOS -->
+        <div id="repos" class="pb-3">
+          <h1 class="text-center mt-3"><b>Projetos GitHub</b></h1>
+          <!-- OS REPOSITORIOS FICAM AQUI -->
+        </div>
+        <div id="redesSociais">
+            <h1 class="text-center mt-3"><b>Redes sociais</b></h1>
+        </div>
+      </div>
+      <footer class="footer mt-auto">
+        <div
+          class="container text-center d-flex align-items-center justify-content-center"
+        >
+          <p class="pt-3">
+            <b>"O conhecimento liberta o homem de qualquer limitação"</b>
+          </p>
         </div>
       </footer>
+    </div>
     <!-- SCRIPTS -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

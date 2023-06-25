@@ -6,7 +6,30 @@ function themeToggle() {
   return html.classList.toggle("dark-mode");
 }
 //elementos PROJETOS GITHUB
+//gerenciador de telas
+const windows = document.getElementById("window");
 const repositories = document.getElementById("repos");
+const perfil = document.getElementById("perfil");
+const redes = document.getElementById("redesSociais");
+
+//função navegação entre telas telas
+function winRepos() {
+  repositories.style.display = "block";
+  perfil.style.display = "none";
+  redes.style.display = "none";
+}
+
+function winPerfil() {
+  repositories.style.display = "none";
+  perfil.style.display = "block";
+  redes.style.display = "none";
+}
+
+function winRedes() {
+  repositories.style.display = "none";
+  perfil.style.display = "none";
+  redes.style.display = "block";
+}
 
 //chamada API GitHUb
 function getApiGitHub() {
@@ -23,7 +46,9 @@ function getApiGitHub() {
             <div class="ps-3 pe-3 pb-0 card-header d-flex justify-content-between">
               <h3 class="">${item.name}</h3>
               <div class="">
-                <p class="dateCard">${Intl.DateTimeFormat('pt-BR').format(new Date(item.created_at)) }</p>
+                <p class="dateCard">${Intl.DateTimeFormat("pt-BR").format(
+                  new Date(item.created_at)
+                )}</p>
               </div>
             </div>
             <div class="card-body d-flex justify-content-between">
