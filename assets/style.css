@@ -11,6 +11,7 @@
   --a-color-hover: rgb(141, 25, 218);
   --footer-color: rgb(197, 197, 197);
   --fonts-color: rgb(182, 121, 41);
+  --menu-show-bg:  #d0cfd0e5;
 }
 
 .dark-mode:root {
@@ -25,6 +26,7 @@
   --a-color-hover: rgb(46, 202, 116);
   --footer-color: rgb(107, 107, 107);
   --fonts-color: #2196f3;
+  --menu-show-bg: #252525de;
 }
 
 * {
@@ -48,14 +50,14 @@ body .main h1 {
 
 .collapse {
     border-bottom: 0.2px solid var(--border-card);
-    background-color: var(--body-bg);
+    background-color: var(--menu-show-bg);
     width: 100%;
     position: absolute;
 }
 
 .collapsing {
     height: 0 important;
-    background-color: var(--body-bg); 
+    background-color: var(--menu-show-bg); 
     border-bottom: 0.2px solid var(--border-card);
   }
 
