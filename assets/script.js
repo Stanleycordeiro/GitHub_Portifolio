@@ -62,7 +62,7 @@ function getApiGitHub() {
 
         project.innerHTML = `<div class="card m-4 mt-4 shadow border-2">
             <div class="ps-3 pe-3 pb-0 card-header d-flex justify-content-between">
-              <h3 class="">${item.name}</h3>
+              <h3 class=""><i class="bi bi-display pe-2"></i>${item.name}</h3>
               <div class="">
                 <p class="dateCard">${Intl.DateTimeFormat("pt-BR").format(
                   new Date(item.created_at)
@@ -71,7 +71,7 @@ function getApiGitHub() {
             </div>
             <div class="card-body d-flex justify-content-between">
               <a target="_blank" href="${item.html_url}"
-                >${item.html_url}</a
+                ><i class="bi bi-globe pe-1"></i>${item.html_url}</a
               >
               <p><b>${item.language}</b></p>
             </div>
