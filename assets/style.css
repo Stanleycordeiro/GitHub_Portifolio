@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,600;1,400&display=swap");
 
 :root {
-  --body-bg: #e4e4e4;
+  --body-bg: #d8d6db;
   --body-color: #707070;
   --card-bg: #f0f0f0;
   --header-color: #7e7e7e;
-  --border-card: #acacac;
-  --body-h1: #525252;
-  --color-a: rgb(197, 152, 26);
-  --a-color-hover: rgb(252, 186, 7);
+  --border-card: rgb(226, 147, 44);
+  --body-h1: rgb(226, 147, 44);
+  --color-a: rgb(98, 27, 145);
+  --a-color-hover: rgb(141, 25, 218);
   --footer-color: rgb(197, 197, 197);
+  --fonts-color:rgb(182, 121, 41);
 }
 
 .dark-mode:root {
@@ -23,6 +24,7 @@
   --color-a: rgb(27, 146, 81);
   --a-color-hover: rgb(46, 202, 116);
   --footer-color: rgb(107, 107, 107);
+  --fonts-color:#2196f3;
 }
 
 * {
@@ -32,6 +34,10 @@
 body {
   background-color: var(--body-bg);
   color: var(--body-color);
+}
+
+body .main h1 {
+    color: var(--fonts-color);
 }
 
 #header {
