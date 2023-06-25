@@ -5,6 +5,13 @@ const checkbox = document.getElementById("checkBox");
 function themeToggle() {
   return html.classList.toggle("dark-mode");
 }
+//função apra resetar a checkbox do DARKMODE ao atualizar a pagina
+window.addEventListener('load', function() {
+    if (checkbox.checked) {
+    } else {
+      checkbox.checked = true;
+    }
+  });
 
 //função para fechar colapse automaticamente
 function fecharCollapse() {
