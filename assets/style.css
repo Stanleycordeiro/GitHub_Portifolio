@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,600;1,400&display=swap");
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 :root {
   --body-bg: #d8d6db;
   --body-color: #707070;
@@ -11,7 +11,7 @@
   --a-color-hover: rgb(141, 25, 218);
   --footer-color: rgb(197, 197, 197);
   --fonts-color: rgb(182, 121, 41);
-  --menu-show-bg:  #d0cfd0e5;
+  --menu-show-bg: #d0cfd0e5;
 }
 
 .dark-mode:root {
@@ -45,21 +45,20 @@ body .main h1 {
 #header {
   background-color: var(--header-color);
   border-bottom: 0.2px solid var(--border-card);
-  
 }
 
 .collapse {
-    border-bottom: 0.2px solid var(--border-card);
-    background-color: var(--menu-show-bg);
-    width: 100%;
-    position: absolute;
+  border-bottom: 0.2px solid var(--border-card);
+  background-color: var(--menu-show-bg);
+  width: 100%;
+  position: absolute;
 }
 
 .collapsing {
-    height: 0 important;
-    background-color: var(--menu-show-bg); 
-    border-bottom: 0.2px solid var(--border-card);
-  }
+  height: 0 important;
+  background-color: var(--menu-show-bg);
+  border-bottom: 0.2px solid var(--border-card);
+}
 
 #imgGit {
   width: 45px;
@@ -106,8 +105,7 @@ body .main h1 {
   height: 400px;
   background: cover;
   background-position: center center;
-  border-bottom: 0.2px solid var(--border-card); 
- 
+  border-bottom: 0.2px solid var(--border-card);
 }
 
 #repos {
@@ -116,6 +114,48 @@ body .main h1 {
 
 #redesSociais {
   display: none;
+}
+
+#cardProfile{
+    width: 600px;
+    border-radius: 20px;
+    
+}
+
+#profileName {
+margin-top: 90px;
+color: var(--body-color);
+}
+
+#backgroundProfile{
+    background-color: var(--body-h1);
+    width: 100%;
+    height: 190px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#perfil #contentProfile h3, h5{
+    color: var(--body-color);
+}
+
+#perfil #contentProfile #contatos h5 {
+    color: var(--body-color);
+}
+#contentProfile{
+    width: 100%;
+   
+}
+
+
+#backgroundProfile img{
+
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 130px;
+    border: 10px solid var(--border-card);
+    object-fit: cover;
 }
 
 body .card {
