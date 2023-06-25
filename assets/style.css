@@ -43,7 +43,21 @@ body .main h1 {
 #header {
   background-color: var(--header-color);
   border-bottom: 0.2px solid var(--border-card);
+  
 }
+
+.collapse {
+    border-bottom: 0.2px solid var(--border-card);
+    background-color: var(--body-bg);
+    width: 100%;
+    position: absolute;
+}
+
+.collapsing {
+    height: 0 important;
+    background-color: var(--body-bg); 
+    border-bottom: 0.2px solid var(--border-card);
+  }
 
 #imgGit {
   width: 45px;
@@ -90,7 +104,8 @@ body .main h1 {
   height: 400px;
   background: cover;
   background-position: center center;
-  border-bottom: 0.2px solid var(--border-card);
+  border-bottom: 0.2px solid var(--border-card); 
+ 
 }
 
 #repos {
@@ -98,7 +113,7 @@ body .main h1 {
 }
 
 #redesSociais {
-    display: none;
+  display: none;
 }
 
 body .card {
@@ -145,8 +160,6 @@ a:hover {
   background-color: var(--header-color);
   color: var(--footer-color);
   border-top: 0.2px solid var(--border-card);
- 
-  
 }
 /* Btn DARKMODE */
 .dark {
