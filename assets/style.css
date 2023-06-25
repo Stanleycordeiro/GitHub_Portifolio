@@ -146,6 +146,11 @@ color: var(--body-color);
 #perfil #contentProfile #contatos h5 {
     color: var(--body-color);
 }
+
+#redesSociais #divSociais h1{
+    color: var(--body-color);
+}
+
 #contentProfile{
     width: 100%;
    
