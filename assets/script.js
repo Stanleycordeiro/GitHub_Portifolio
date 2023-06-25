@@ -6,7 +6,7 @@ function themeToggle() {
   return html.classList.toggle("dark-mode");
 }
 //elementos PROJETOS GITHUB
-const repositories = document.getElementById("main");
+const repositories = document.getElementById("repos");
 
 //chamada API GitHUb
 function getApiGitHub() {
