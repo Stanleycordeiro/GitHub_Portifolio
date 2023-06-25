@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,600;1,400&display=swap");
 
 :root {
-  --body-bg: #fafafa;
+  --body-bg: #e4e4e4;
   --body-color: #707070;
   --card-bg: #f0f0f0;
   --header-color: #7e7e7e;
@@ -46,6 +46,38 @@ body {
     position:relative; */
 }
 
+#navMenu {
+    background-color: var(--body-bg);
+    border: 0.2px solid var(--border-card);
+    outline: none;
+    box-shadow: none;
+}
+
+#navIcon {
+    filter: var(--color-git);
+}
+
+#collapse{
+    background-color: var(--body-bg);
+}
+
+#btnMenu button {
+    background-color: transparent;
+  border: none;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#btnMenu button:hover {
+    transform: scale(1.1);
+}
+
+#btnMenu button:active {
+    color: var(--color-a);
+}
+
 #headerBg {
   background-image: url(./images/bgHeader.gif);
   width: 100%;
@@ -55,31 +87,34 @@ body {
   border-bottom: 0.2px solid var(--border-card);
 }
 
+
 body .card {
   border: 0.2px solid var(--border-card);
   background-color: var(--card-bg);
 }
 
 .card .dateCard {
-    border: 0.5px solid var(--border-card);
-    border-radius: 10px;
-    padding: 4px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin-top: 4%;
+  border: 0.5px solid var(--border-card);
+  border-radius: 10px;
+  padding: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-top: 4%;
 }
 
 #circle {
-    background-color: #2196f3;
-    width: 12px;
-    height: 12px;
-    margin-top: 6px;
-    border-radius: 20px
+  background-color: #2196f3;
+  width: 12px;
+  height: 12px;
+  margin-top: 6px;
+  border-radius: 20px;
 }
 
 body h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   color: var(--body-h1);
 }
 
@@ -94,13 +129,11 @@ a:hover {
 }
 
 .footer {
-    background-color: var(--header-color);
-    color: var(--footer-color);
-    height: 60px;
-    border-top: 0.2px solid var(--border-card);
+  background-color: var(--header-color);
+  color: var(--footer-color);
+  border-top: 0.2px solid var(--border-card);
+  height: 80px;
 }
-
-
 
 /* Btn DARKMODE */
 .dark {
