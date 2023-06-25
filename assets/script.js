@@ -5,6 +5,14 @@ const checkbox = document.getElementById("checkBox");
 function themeToggle() {
   return html.classList.toggle("dark-mode");
 }
+
+//função para fechar colapse automaticamente
+function fecharCollapse() {
+  var collapseElement = document.getElementById("navbarToggleExternalContent");
+  var bootstrapCollapse = new bootstrap.Collapse(collapseElement);
+  bootstrapCollapse.hide();
+}
+
 //elementos PROJETOS GITHUB
 //gerenciador de telas
 const windows = document.getElementById("window");
@@ -14,21 +22,31 @@ const redes = document.getElementById("redesSociais");
 
 //função navegação entre telas telas
 function winRepos() {
-  repositories.style.display = "block";
-  perfil.style.display = "none";
-  redes.style.display = "none";
+  setTimeout(() => {
+    repositories.style.display = "block";
+    perfil.style.display = "none";
+    redes.style.display = "none";
+  }, 300);
+  fecharCollapse();
 }
 
 function winPerfil() {
-  repositories.style.display = "none";
-  perfil.style.display = "block";
-  redes.style.display = "none";
+  setTimeout(() => {
+    repositories.style.display = "none";
+    perfil.style.display = "block";
+    redes.style.display = "none";
+  }, 300);
+
+  fecharCollapse();
 }
 
 function winRedes() {
-  repositories.style.display = "none";
-  perfil.style.display = "none";
-  redes.style.display = "block";
+  setTimeout(() => {
+    repositories.style.display = "none";
+    perfil.style.display = "none";
+    redes.style.display = "block";
+  }, 300);
+  fecharCollapse();
 }
 
 //chamada API GitHUb
