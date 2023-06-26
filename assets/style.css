@@ -138,7 +138,30 @@ body .main h1 {
   width: 1800px;
 }
 
+#contatos a {
+  text-decoration: none;
+  color: var(--body-color);
+}
+#contatos a:hover {
+  text-decoration: none;
+  color: var(--body-color);
+}
+
 @media (max-width: 600px) {
+  #contatos h5 a {
+     font-size: 16px; 
+     text-decoration: none;
+     color: var(--body-color);
+   }
+ }
+ @media (max-width: 400px) {
+  #contatos h5 a {
+     font-size: 13px; 
+     text-decoration: none;
+     color: var(--body-color);
+   }
+ }
+/* @media (max-width: 600px) {
   #repos .card {
     width: 400px;
   }
@@ -148,7 +171,7 @@ body .main h1 {
   #repos .card {
     width: 300px;
   }
-}
+} */
 #imgSkills i {
   font-size: 90px;
 }
