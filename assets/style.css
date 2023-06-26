@@ -138,6 +138,17 @@ body .main h1 {
   width: 1800px;
 }
 
+@media (max-width: 600px) {
+  #repos .card {
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  #repos .card {
+    width: 300px;
+  }
+}
 #imgSkills i {
   font-size: 90px;
 }
