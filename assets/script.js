@@ -69,7 +69,7 @@ function getApiGitHub() {
 
         project.innerHTML = `<div class="card m-4 mt-4 shadow border-2">
             <div class="ps-3 pe-3 pb-0 card-header d-flex justify-content-between">
-              <h3 class=""><i class="bi bi-display pe-2"></i>${item.name}</h3>
+              <h3 class="text-break"><i class="bi bi-display pe-2"></i>${item.name}</h3>
               <div class="">
                 <p class="dateCard">${Intl.DateTimeFormat("pt-BR").format(
                   new Date(item.created_at)
