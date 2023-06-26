@@ -256,6 +256,17 @@ h5 {
     font-size: 38px;
   }
 }
+@media (max-width: 600px) {
+  #redesSociais #divSociais a:hover {
+    font-size: 45px;
+  }
+}
+@media (max-width: 400px) {
+  #redesSociais #divSociais a:hover {
+    font-size: 38px;
+  }
+}
+
 #contentProfile {
   width: 100%;
 }
