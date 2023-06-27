@@ -251,8 +251,18 @@ h5 {
     font-size: 45px;
   }
 }
+@media (max-width: 600px) {
+  #redesSociais #divSociais h1 {
+    font-size: 45px;
+  }
+}
 @media (max-width: 400px) {
   #redesSociais #divSociais a {
+    font-size: 38px;
+  }
+}
+@media (max-width: 400px) {
+  #redesSociais #divSociais h1 {
     font-size: 38px;
   }
 }
