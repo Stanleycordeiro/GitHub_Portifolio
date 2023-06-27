@@ -81,8 +81,8 @@ function getApiGitHub() {
               </div>
             </div>
             <div class="card-body d-flex justify-content-between pb-2" id="reposA">
-              <a target="_blank" class="text-break" href="${item.html_url}"
-                ><i class="bi bi-globe pe-1"></i>${item.html_url}</a
+              <a class="pe-2" target="_blank"  href="${item.html_url}"
+                ><i class="bi bi-globe pe-1 "></i>${item.html_url}</a
               >
               <p><b>${item.language}</b></p>
             </div>

@@ -170,7 +170,7 @@ body .main h1 {
 } */
 @media (max-width: 600px) {
   #nameRepos {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media (max-width: 400px) {
@@ -334,6 +334,8 @@ h5 {
   color: var(--color-a);
   text-decoration: none;
   font-size: 14px;
+  
+  word-break: break-all;
 }
 
 #reposA a:hover {
