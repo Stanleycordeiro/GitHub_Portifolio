@@ -6,12 +6,14 @@ function themeToggle() {
   return html.classList.toggle("dark-mode");
 }
 //função apra resetar a checkbox do DARKMODE ao atualizar a pagina
-window.addEventListener('load', function() {
-    if (checkbox.checked) {
-    } else {
-      checkbox.checked = true;
-    }
-  });
+window.addEventListener("load", function () {
+  if (checkbox.checked) {
+  } else {
+    checkbox.checked = true;
+  }
+});
+
+
 
 //função para fechar colapse automaticamente
 function fecharCollapse() {
@@ -68,16 +70,18 @@ function getApiGitHub() {
         let project = document.createElement("div");
         project.classList.add("d-flex", "justify-content-center");
         project.innerHTML = `<div class="card m-4 mt-4 shadow border-2">
-            <div class="ps-3 pe-3 pb-0 card-header d-flex justify-content-between">
-              <h3 class="text-break"><i class="bi bi-display pe-2"></i>${item.name}</h3>
-              <div class="">
+            <div class="ps-3 pe-3  card-header d-flex justify-content-between">
+              <h3  id="nameRepos"><i class="bi bi-display pe-2"></i>${
+                item.name
+              }</h3>
+              <div>
                 <p class="dateCard">${Intl.DateTimeFormat("pt-BR").format(
                   new Date(item.created_at)
                 )}</p>
               </div>
             </div>
-            <div class="card-body d-flex justify-content-between" id="reposA">
-              <a target="_blank" href="${item.html_url}"
+            <div class="card-body d-flex justify-content-between pb-2" id="reposA">
+              <a target="_blank" class="text-break" href="${item.html_url}"
                 ><i class="bi bi-globe pe-1"></i>${item.html_url}</a
               >
               <p><b>${item.language}</b></p>

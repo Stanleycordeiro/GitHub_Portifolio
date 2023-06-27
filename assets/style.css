@@ -101,13 +101,13 @@ body .main h1 {
 
 @media (max-width: 600px) {
   #btnMenu button h5 {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 
 @media (max-width: 400px) {
   #btnMenu button h5 {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
@@ -168,6 +168,16 @@ body .main h1 {
     width: 300px;
   }
 } */
+@media (max-width: 600px) {
+  #nameRepos {
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  #nameRepos {
+    font-size: 15px;
+  }
+}
 #imgSkills i {
   font-size: 90px;
 }
@@ -253,7 +263,7 @@ h5 {
 }
 @media (max-width: 600px) {
   #redesSociais #divSociais h1 {
-    font-size: 45px;
+    font-size: 38px;
   }
 }
 @media (max-width: 400px) {
